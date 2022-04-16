@@ -2,7 +2,9 @@
   text-align: center;
   text-transform: uppercase;
   justify-content: space-between;
+  padding: 20px;
 }
+
 /* this code is to test logo (image) centering */
 header.img {
   text-align: center;
@@ -19,22 +21,20 @@ ul.a {
   font-stretch: expanded;
 }
 
-li.a {
-  background-color: red;
-}
-
 footer {
   background-color: rgb(31, 77, 51);
   padding-bottom: 10px;
   color: white;
 }
 
-.active .footer-nav {
+.footer-nav {
   text-align: Left;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
-.footer-copyright {
+ul.b {
   text-align: center;
   text-transform: capitalize;
+  list-style-type: none;
 }
