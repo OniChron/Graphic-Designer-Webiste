@@ -1,40 +1,33 @@
 .header-nav {
   text-align: center;
   text-transform: uppercase;
-  justify-content: space-between;
   padding: 20px;
 }
-
-/* this code is to test logo (image) centering */
-header.img {
-  text-align: center;
-}
-
 p {
   text-align: right;
+  overflow: auto;
 }
-
+img {
+  border-radius: 50%;
+  background-position: left;
+  vertical-align: sub;
+  display: inline-block;
+}
 ul.a {
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-stretch: expanded;
 }
-
 footer {
-  background-color: rgb(31, 77, 51);
+  background: linear-gradient(rgb(70, 158, 70),rgb(51, 107, 51), rgb(29, 68, 29))
+  }
   padding-bottom: 10px;
-  color: white;
 }
-
 .footer-nav {
   text-align: Left;
   text-transform: uppercase;
   list-style-type: none;
-}
-
-ul.b {
-  text-align: center;
-  text-transform: capitalize;
-  list-style-type: none;
+  position: absolute;
+  color: white;
 }
