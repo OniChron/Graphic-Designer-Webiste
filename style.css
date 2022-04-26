@@ -1,10 +1,5 @@
 /*aligning the page to fit when windows resize*/
-body {
-  align-content: center;
-}
 .header-nav {
-  position: static;
-  top: 0;
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
@@ -17,7 +12,24 @@ body {
   border-bottom: 5px;
   border-style: double; 
 }
+/*
+This is for the header section for a horizontal navigation bar
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  display: inline;
+}
+li a {
+  display: block;
+  padding: 8px;
+}
 
+/*This line of css is what changes what highlights on the website*/
 a:hover {
   color: red;
 }
@@ -32,36 +44,49 @@ a:hover {
   margin: 25px 50px 75px 100px;
 
 }
-img {
-  align-content: center;
-  clear: left;
-  border-radius: 50%;
-  background-position: left;
-  display: inline-block;
-  box-sizing: content-box;
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
+
+img {
+  flex-basis: 40%;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 10px;
+  padding-left: 20px;
+}
+
 ul.a {
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-stretch: expanded;
 }
+/*The codes in that follow this until next comment are for the header piece
+for the website.*/
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
+  height: 8%;
   background: linear-gradient(
     rgb(70, 158, 70),
     rgb(51, 107, 51),
     rgb(29, 68, 29)
     );
+    text-align: center;
 }
-.footer-nav {
-  text-align: Left;
+.footer-nav ul {
+  text-align: center;
+  bottom: -10px;
   text-transform: uppercase;
   list-style-type: none;
-  position: absolute;
+  position: fixed;
   color: white;
 }
 .footer-copyright {
